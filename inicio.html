@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="icon" href="archivos\_dbc78604-2451-4a69-b447-c4140fdfecb9-removebg-preview (1).png" type="image/x-icon">
+
+    <title>M & F</title>
+</head>
+
+<body>
+
+    <!-- Video de fondo -->
+    <video id="videoFondo" autoplay loop muted style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <source src="archivos\WhatsApp Video 2024-01-16 at 10.31.51 AM.mp4" type="video/mp4" >
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <div id="pregunta-container">
+        <section id="pregunta">
+            <h2>Pregunta De Validación 🤓 </h2>
+            <p>¿Cuál es nuestro día de cumple mes?</p>
+            <div id="respuestas">
+                <button class="respuesta-btn" data-respuesta="2">2</button>
+                <button class="respuesta-btn" data-respuesta="30">30</button>
+                <button class="respuesta-btn" data-respuesta="31">31</button>
+                <button class="respuesta-btn" data-respuesta="15">15</button>
+            </div>
+            <p id="mensajeRespuesta"></p>
+            <img id="imagenRespuesta" src="archivos\WhatsApp Image 2024-01-16 at 12.03.56 AM.jpeg" alt="Respuesta Incorrecta" style="display: none; width: 180px; margin-left: 90px; margin-right: 90px; border-radius: 20%; ">
+        </section>
+    </div>
+
+    <div id="contenido" style="visibility: hidden;">
+        <nav class="navbar bg-body-tertiary">
+            <form class="container-fluid justify-content-center d-flex">
+              <img src="archivos\_dbc78604-2451-4a69-b447-c4140fdfecb9-removebg-preview (1).png" style="height: 90px; ;">
+              <a class="btn btn-outline-success me-2" href="inicio.html">Inicio</a>
+              <a class="btn btn-outline-success me-2" href="galeria.html">Galeria</a>
+              <a class="btn btn-outline-success me-2" href="calendario.html">Calendario</a>
+              <a class="btn btn-outline-success me-2" href="juego.html">Juego</a>
+            </form>
+          </nav>
+
+        <h2>Hola mi vida, este espacio será para ir guardando y destacando nuestros momentos lindos con fotos y videos.<br> Hice unos pocos y tendremos que ir añadiendo más, espero te guste , Te Amo Mucho.</h2>
+        <!-- Carrusel -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <!-- Agrega un indicador para cada nueva imagen -->
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="archivos\WhatsApp Image 2024-01-09 at 2.21.09 PM (4).jpeg"
+                        class="d-block w-100 custom-img" alt="Foto 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nuestra primera cita formal</h5>
+                        <p>Este fue el primero de muchos días llenos de felicidad que me has dado, en el cual fuimos a buscar unas tacitas de tu mami y después fuimos al cine y nos devolvimos en Uber jiji.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="archivos\WhatsApp Image 2024-01-09 at 2.21.09 PM (3).jpeg"
+                        class="d-block w-100 custom-img" alt="Foto 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nuestra primera siestita y regaloneo</h5>
+                        <p>Cada vez que veo esa foto, pienso en lo lejano que algún día veía que esto fuera posible.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="archivos\WhatsApp Image 2024-01-09 at 2.21.10 PM.jpeg"
+                        class="d-block w-100 custom-img" alt="Foto 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Otro Año Nuevo Juntitos</h5>
+                        <p>¿Quién diría que estaríamos aquí otra vez? Espero que sean todos los de mi vida junto a ti (te veías tan pero tan preciosa)</p>
+                    </div>
+                </div>
+                <!-- Nuevas imágenes -->
+                <div class="carousel-item">
+                    <img src="archivos\WhatsApp Image 2024-01-16 at 1.06.40 AM.jpeg"
+                        class="d-block w-100 custom-img" alt="Nueva Imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cafecito Helado y Primer Contacto de los Suegros</h5>
+                        <p>Este día hicimos cafecito helado para toda la familia y nos quedaron muy rikisimoss, también este día tu mami llegó a buscar las llaves y se conocieron un poquito con mis papás jiji</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="archivos\WhatsApp Image 2024-01-09 at 2.21.06 PM.jpeg "
+                        class="d-block w-100 custom-img" alt="Nueva Imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Que linda Te Ves Enojadita</h5>
+                        <p>Poco se habla lo preciosa que eri queriendo pegarme :p</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="archivos\WhatsApp Image 2024-01-09 at 2.21.07 PM (4).jpeg"
+                        class="d-block w-100 custom-img" alt="Nueva Imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>No supero esta foto</h5>
+                        <p>Es cuatico lo preciosa que eres miamor. Más encima, tú me dices que estás fea y yo que te veo taaaaaaaaaaaaaaaaan hermosaaa😍🥰</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="archivos\WhatsApp Image 2024-01-09 at 2.21.08 PM (2).jpeg"
+                        class="d-block w-100 custom-img" alt="Nueva Imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Día de disco juntitos</h5>
+                        <p>Ese también fue de los primeros días juntos (atrás había un demonio).</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="archivos\WhatsApp Image 2024-01-09 at 2.21.09 PM (1).jpeg"
+                        class="d-block w-100 custom-img" alt="Nueva Imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>F & M</h5>
+                        <p>Cualquiera diría que hicimos cochinadas y, pues no, puro amor empañó los vidrios.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
