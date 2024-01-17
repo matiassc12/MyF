@@ -46,7 +46,8 @@ header {
 }
 
 .respuesta-btn.incorrecto {
-    background-color: #f44336; /* Rojo */
+    background-color: #f44336 !important; /* Cambia el color a rojo */
+    color: #ffffff !important; /* Cambia el color del texto a blanco */
 }
 
 .custom-img {
